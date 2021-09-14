@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+	<html>
+		
+		<head>
+			<meta charset="utf-8">	
+			<meta name="viewport" content="width-device-width, initial-scale-1.0">
+			<title>Cadastro</title>
+
+		</head>
+
+		<body>
+
+			<div>
+				<h1>Cadastro de DEVs</h1>
+				<p>Complete suas informações</p>
+				<br>
+			</div>
+
+			<form>
+				<fieldset>
+					
+					<div>
+						<label>Nome</label>
+						<input type="text" name="Nome..." id="nome" placeholder=" Primeiro nome">
+					</div>
+
+					<div>
+						<label>Sobrenome</label>
+						<input type="text" name="Sobrenome" id="sobrenome" placeholder="Ultimo nome">
+					</div>
+
+				</fieldset>
+
+				<div>
+					<label>E-mail</label>
+					<input type="email" name="E-mail" id="email" placeholder="@hotmail.com">
+				</div>
+
+				<div>
+					<label>De qual lado da aplicação você desenvolve?</label>
+					<label>
+						<input type="radio" name="devweb" value="frontend" checked>Front-end
+					</label>
+					<label>
+						<input type="radio" name="devweb" value="backend">Back-end
+					</label>
+					<label>
+						<input type="radio" name="devweb" value="fullstak">Fullstack
+					</label>
+				</div>
+				<div>
+					<label>Senioridade</label>
+					<select id="Senioridade">
+						<option  selected disabled value="">Selecione...</option>
+						<option>Junior</option>
+						<option>Pleno</option>
+						<option>Senior</option>
+					</select>
+				</div>
+
+				<fieldset>
+					<div>
+						<label>Selecione as tecnologias que utiliza:</label><br><br>
+						<input type="checkbox" id=tecnologia1 name="tecnologia1" value="HTML">
+						<label for="tecnologia1"> HTML</label>
+						<input type="checkbox" id=tecnologia2 name="tecnologia2" value="CSS">
+						<label for="tecnologia2"> HTML</label>
+						<input type="checkbox" id=tecnologia3 name="tecnologia3" value="Javascript">
+						<label for="tecnologia3"> HTML</label>
+						<input type="checkbox" id=tecnologia4 name="tecnologia4" value="PHP">
+						<label for="tecnologia4"> HTML</label>
+						<input type="checkbox" id=tecnologia5 name="tecnologia5" value="C#">
+						<label for="tecnologia5"> HTML</label>
+						<input type="checkbox" id=tecnologia6 name="tecnologia6" value="Python">
+						<label for="tecnologia6"> HTML</label>
+						<input type="checkbox" id=tecnologia7 name="tecnologia7" value="Java">
+						<label for="tecnologia7"> HTML</label>
+					</div>
+				</fieldset>
+				
+			</form>
+			
+		</body>
+
+	</html>

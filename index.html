@@ -45,14 +45,19 @@
 		form input[type=submit]:hover{
 			background-color: #4A5F6A;
 		}
-
+		form input[type=text]:focus{
+			outline: 0;
+		}
+		form input[type=password]:focus{
+			outline: 0;
+		}
 	</style>
 
 	<body>
 		<form>
 			<h3>FACEBOOK</h3>
 			<input id= "email" type="text" name="email" placeholder="Seu e-mail..."/>
-			<input type="password" name="senha" placeholder="Sua senha..."/>
+			<input id= "password" type="password" name="senha" placeholder="Sua senha..."/>
 			<input type="submit" name="acao" value="Enviar"/>
 
 		</form>
@@ -60,9 +65,22 @@
 	</body>
 	<script type="text/javascript">
 		var email = document.getElementById('email');
+		var password = document.getElementById('password');
 
 		email.addEventListener('focus',()=>{
 			email.style.borderColor = "#4A5F6A"
+		});
+
+		email.addEventListener('blur',()=>{
+			email.style.borderColor = "#ccc";
+		});
+
+		password.addEventListener('focus',()=>{
+			password.style.borderColor = "#4A5F6A"
+		});
+
+		password.addEventListener('blur',()=>{
+			password.style.borderColor = "#ccc";
 		});
 	</script>
 
