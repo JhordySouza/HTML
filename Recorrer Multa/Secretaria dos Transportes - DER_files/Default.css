@@ -1,0 +1,69 @@
+/*
+Default.css
+
+This style sheet is applied to all pages corresponding to terminal screens that have been 
+captured and modernized in the Studio environment. Terminal screen data is merged with 
+the page markup (e.g. HTML) created using Studio during the modernization process after 
+which this style sheet is applied. You may want to set font styles in this style sheet to 
+a more modern proportional screen font such as Arial to provide an updated look to your 
+application. To modify the style of all screens that have not been captured and modernized, 
+use the RuntTimeDefault.css style sheet.
+*/
+
+/* Use these for “link” style buttons 
+a:link { color: Navy; text-decoration: none;}
+a:active { color: Navy; text-decoration: none }
+a:visited { color: Navy; text-decoration: none }
+a:hover { color: Navy; text-decoration: underline; }
+*/
+
+.copyright{font-size:x-small; font-family:arial; text-align:center}
+
+/* Basic styles for general use */
+.Regular{font-size:small; font-family:Courier New;}
+.Heading1{font-size:24pt; font-family:arial;font-weight:bold;}
+.Heading2{font-size:18pt; font-family:arial;font-weight:bold;}
+.Heading3{font-size:14pt; font-family:arial;font-weight:bold;}
+.Heading4{font-size:12pt; font-family:arial;font-weight:bold;}
+.Heading5{font-size:10pt; font-family:arial;font-weight:bold;}
+/*Novos estilos*/
+
+
+.fontbody /*este estilo foi engolido pela masterpage*/
+{
+    font-family:Tahoma;
+    font-size: 0.8em;
+}
+.form1 { margin-bottom: 0px; margin-top: 3px; LINE-HEIGHT: 22px; 
+}
+.style5 /*fonte pequena para observacoes*/
+{
+    color:Gray;
+    font-size:smaller;
+    font-family:arial;
+    letter-spacing:0.1px;
+    word-spacing:0.2px;
+}
+    
+.oculta /*some com objetos indesejados*/
+{
+    display:none;
+}
+
+.cursor-pointer{cursor: pointer;}
+.cursor-croshair{cursor: crosshair;}
+.cursor-eresize{cursor: e-resize;}
+.cursor-move{cursor: move;}
+.cursor-help{cursor:help;}
+.cursor-text{cursor:text;}
+
+.progresso {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);;
+    height: 90px;
+    width: 280px;
+}
